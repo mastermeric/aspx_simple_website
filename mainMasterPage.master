@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mainMasterPage.master.cs" Inherits="tema1_mainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <!-- Header Starts -->
+    <div id="header">
+      <div id="header-txt">
+        <div id="header-Motivation-txt"><a href="#">A.B.C Bilişim</a>
+          <p>Call us toll free: 1-800-123-4567</p>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div id="nav">
+        <ul>
+          <li><a href="main_page.aspx">Anasayfa</a></li>
+          <li><a href="about_us.aspx">Hakkımızda</a></li>
+          <li><a href="android_ios_gsm_gps_mobil_urunler.aspx">Android-Mobil</a></li>
+          <li><a href="eticaret_yazilim_web_urunleri.aspx">E-Ticaret</a></li>
+          <li><a href="otomasyon_kartligecis_elektronik_urunler.aspx">Otomasyon-Haberleşme</a></li>
+          <li class="last_item"><a href="contact_us.aspx">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+    
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    
+     <!-- footer starts -->
+    <div id="footer">
+      <div class="footer-in">
+        <div class="copy">
+          <p>Copyright © 2013 WebsiteName. All rights reserved. Design by <a href="http://www.freecsstemplates.com" target="_blank" rel="nofollow">FreeCSSTemplates.com</a></p>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li><a href="#"><img src="images/face-book.png"alt="img" /></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="img" /></a></li>
+            <li><a href="#"><img src="images/google.png" alt="img" /></a></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- footer ends --> 
+    </form>
+</body>
+</html>
